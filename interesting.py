@@ -6,9 +6,8 @@ from io import BytesIO
 def create_word_table_from_dict(data_dict):
     doc = Document()
     doc.add_heading("Data Table", level=1)
-    table = doc.add_table(rows=1, cols=2, style="Table Grid")
-    table.cell(0, 0).text = "Keys"
-    table.cell(0, 1).text = "Values"
+    table = doc.add_table(rows=0, cols=2, style="Table Grid")
+   
     for key, value in data_dict.items():
         row = table.add_row()
         row.cells[0].text = str(key)
@@ -72,4 +71,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
