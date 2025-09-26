@@ -41,7 +41,7 @@ def main():
     # Dropdown for Proxy
     proxy = st.selectbox(
         "Proxy",
-        options=["None","SCRAPDO", "SCRAPERAPI"]
+        options=["None","SCRAPDO", "SCRAPERAPI","DECODO"]
     )
 
     credit = st.text_input("Credit")
@@ -71,5 +71,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
